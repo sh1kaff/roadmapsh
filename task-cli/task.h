@@ -19,8 +19,6 @@ public:
     std::vector<Task> list { std::vector<Task>() };
 
 public:
-    TasksList() = default;
-
     void addTask(std::string description);
     void editTask(size_t id, std::string description);
     void delTask(size_t id);

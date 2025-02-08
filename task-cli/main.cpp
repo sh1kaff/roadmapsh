@@ -1,5 +1,6 @@
 #include <iostream>
 #include "task.h"
+#include "json.hpp"
 
  
 int main() {
@@ -14,7 +15,7 @@ int main() {
 
     std::cin >> a;
 
-    list.markDone(3);
+    list.markStatus(3, Status::DONE);
     list.editTask(1, std::string("Second Edit"));
 
     std::cout << list << "\n";
